@@ -17,6 +17,7 @@
 .button:hover{
     color: #E4C1F9;
     box-shadow: 5px 5px rgb(255, 153, 200);
+    cursor: pointer;
 }
 
 @media (max-width: 800px){

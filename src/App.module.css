@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     background-color: black;
 }
 .imgCard{
@@ -11,10 +11,4 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-}
-
-@media (max-width: 800px){
-    .app{
-        height: 100dvh;
-    }
 }
