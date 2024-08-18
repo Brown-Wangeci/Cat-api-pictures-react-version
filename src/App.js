@@ -1,7 +1,7 @@
 import styles from'./App.module.css';
 import Button from './components/button/button';
 import GeneratedImage from './components/generated-image/generatedImage';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Loader from './components/loader/loader';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
     const [catImage, setCatImage] = useState(null);
     const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [imageCount, setImageCount] = useState(0);
 
     const fetchCatImage = async () => {
@@ -36,10 +36,6 @@ function App() {
             setLoading(false);
         }
     }
-
-    useEffect(() => {
-      fetchCatImage();
-    },[])
 
   return (
     <div className={styles.app}>
