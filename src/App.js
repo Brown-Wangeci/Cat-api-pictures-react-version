@@ -19,8 +19,9 @@ function App() {
     const [imageCount, setImageCount] = useState(0);
 
     const fetchCatImage = async () => {
-        setLoading(true);
         try {
+            setLoading(true);
+            setError(null);
             const catData = await fetch(API_URL, OPTIONS);
             if(!catData.ok){
                 throw new Error('Error fetching');
