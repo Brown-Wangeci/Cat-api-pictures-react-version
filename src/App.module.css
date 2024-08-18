@@ -1,0 +1,20 @@
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.imgCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 800px){
+    .app{
+        height: 100dvh;
+    }
+}

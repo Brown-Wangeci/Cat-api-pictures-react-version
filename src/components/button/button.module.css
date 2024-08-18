@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Matemasie&display=swap');
+
+.button{
+    font-family: "Matemasie", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 0;
+    background-color: black;
+    border: 1px solid rgb(255, 153, 200);
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: block;
+    color: rgb(255, 153, 200);
+    box-shadow: 5px 5px #E4C1F9;
+    transition: all .6s;
+}
+.button:hover{
+    color: #E4C1F9;
+    box-shadow: 5px 5px rgb(255, 153, 200);
+}
+
+@media (max-width: 800px){
+    .button{
+        font-size: 1.5rem;
+    }
+}
