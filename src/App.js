@@ -38,7 +38,7 @@ function App() {
 
     useEffect(() => {
       fetchCatImage();
-    },[fetchCatImage])
+    },[])
 
   return (
     <div className={styles.app}>
